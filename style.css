@@ -25,3 +25,10 @@ div#footer {
 	padding: 30px;
 	color: #666;
 }
+div#about {
+	opacity: 0;
+	transition: all 2s linear;
+}
+div#about.show {
+    opacity: 1;
+}
