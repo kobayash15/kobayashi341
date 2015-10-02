@@ -1,1 +1,6 @@
 *~
+node_modules
+.metadata/*
+.project
+npm-debug.log
+Thumbs.db
