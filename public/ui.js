@@ -24,7 +24,22 @@ var initialize = function() {
     // From this point forward, when the button is clicked, the                                                                   
     // toggle function shall be invoked.                                                                                           
     button.onclick = toggle;
+    
+    //grab the 'submit' button element, identified by the 'submit-btn' id.
+	button = document.getElementById('submit-btn');
+	
+	//From this point forward, when the button in clicked, the fetch function
+	//shall be invoked
+	button.onclick = fetch;
 
+};
+
+var fetch = function(){
+	var text = document.getElementById('year');
+	var year = text.textContent;
+	console.log(year);
+	vizController(year);
+	
 };
 
 // When this file is included at the bottom of the page,                                                                           
